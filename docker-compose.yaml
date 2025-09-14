@@ -2,7 +2,7 @@ services:
   db:
     image: postgres:15-alpine
     ports:
-      - "5432:5432"
+      - "5433:5432"
     environment: 
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
@@ -18,7 +18,7 @@ services:
   pgadmin:
     image: dpage/pgadmin4:latest
     depends_on:
-      - postgres
+      - db
     ports:
       - '5050:80'
     environment: 
@@ -32,7 +32,7 @@ services:
       context: .
       dockerfile: docker/Dockerfile
     depends_on:
-      - postgres
+      - db
     volumes:
       - ./backend:/app
     ports:
