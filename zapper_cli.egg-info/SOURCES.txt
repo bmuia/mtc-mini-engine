@@ -1,0 +1,11 @@
+README.md
+setup.py
+terminal/__init__.py
+terminal/cli.py
+terminal/main.py
+zapper_cli.egg-info/PKG-INFO
+zapper_cli.egg-info/SOURCES.txt
+zapper_cli.egg-info/dependency_links.txt
+zapper_cli.egg-info/entry_points.txt
+zapper_cli.egg-info/requires.txt
+zapper_cli.egg-info/top_level.txt

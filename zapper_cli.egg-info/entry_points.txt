@@ -1,0 +1,2 @@
+[console_scripts]
+zipp = terminal.cli:cli
