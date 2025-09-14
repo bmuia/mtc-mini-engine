@@ -1,1 +1,4 @@
-django
+Django
+psycopg2
+sqlparse
+python-dotenv
